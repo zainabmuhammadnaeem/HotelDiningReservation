@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rooftop Grill Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #6e4b25;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Rooftop Grill Menu</h1>
+    <div>
+        <h2>Menu</h2>
+        <ul>
+            <li><strong>Appetizer:</strong> Grilled Shrimp Skewers</li>
+            <li><strong>Salad:</strong> Caesar Salad</li>
+            <li><strong>Main Course:</strong> Ribeye Steak with Garlic Mashed Potatoes</li>
+            <li><strong>Dessert:</strong> Tiramisu</li>
+        </ul>
+    </div>
+    <div class="reservation-form">
+        <h2>Make a Reservation</h2>
+        <form onsubmit="handleReservation(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <select id="time" name="time" required>
+                <option value="">Select</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="1:00">1:00 PM</option>
+                <option value="2:00">2:00 PM</option>
+                <option value="3:00">3:00 PM</option>
+                <option value="4:00">4:00 PM</option>
+                <option value="5:00">5:00 PM</option>
+                <option value="6:00">6:00 PM</option>
+                <option value="7:00">7:00 PM</option>
+                <option value="8:00">8:00 PM</option>
+            </select>
+
+            <label for="people">Number of People</label>
+            <select id="people" name="people" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </div>
+    
+    <script>
+        function handleReservation(event) {
+            event.preventDefault(); // Prevent form submission
+            const name = document.getElementById("name").value;
+            const date = document.getElementById("date").value;
+            const time = document.getElementById("time").value;
+            const people = document.getElementById("people").value;
+
+            // Display confirmation message
+            alert(`Reservation Confirmed!\nName: ${name}\nDate: ${date}\nTime: ${time}\nNumber of People: ${people}`);
+			// Redirect to payment page (create a new payment.html file)
+            window.location.href = 'payment.html'; 
+        }
+    </script>
+</body>
+</html>
+
