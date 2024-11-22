@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel Dining</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('../../Downloads/croppic.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #c8a25b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #b09a4b;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome to Our Luxury Dining Experience</h1>
+        <a href="login.html" class="button">Login</a> <!-- Link to Login page -->
+    </div>
+</body>
+</html>
+
