@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .thank-you {
+            background-color: #e9f7ef;
+            border: 1px solid #b2ebf2;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you">
+        <h1>Thank You for Your Reservation!</h1>
+        <p>We're thrilled to have you with us!</p>
+        <p>You will receive an email shortly with all the details of your reservation.</p>
+        <p>If you need to adjust or cancel your reservation, please don't hesitate to reach out.</p>
+        <p class="contact-info">Email us at: <a href="mailto:support@yourhotel.com">support@yourhotel.com</a></p>
+        <p>We look forward to welcoming you soon!</p>
+    </div>
+</body>
+</html>
