@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Packages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color:url('../../Downloads/croppic.jpg') no-repeat center center/cover;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #6e4b25;
+        }
+        .package-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .package {
+            background-color:#fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .package img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .package:hover {
+            transform: scale(1.05);
+        }
+        .package-content {
+            padding: 20px;
+        }
+        .package h2 {
+            color: #6e4b25;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .package p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-weight: bold;
+            color: #6e4b25;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #c8a25b;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #b09a4b;
+        }
+        /* Review Section Styles */
+        .review-section {
+            margin-top: 20px;
+        }
+        .reviews {
+            margin-top: 10px;
+            text-align: left;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .reviews p {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Your Dining Package</h1>
+    <div class="package-container">
+        <div class="package">
+            <img src="../../Downloads/local.jpg" width="996" height="1280" alt="Bistro">
+            <div class="package-content">
+                <h2>The Gourmet Bistro</h2>
+                <p>Refined comfort and local favourites.</p>
+                <p class="price">From $69/set</p>
+                <a href="bistroMenu.html" class="button">Book Now</a>
+            </div>
+            <!-- Customer Reviews for The Gourmet Bistro -->
+            <div class="review-section">
+                <h3>Customer Reviews:</h3>
+                <div class="reviews">
+                    <p><strong>John:</strong> Absolutely loved the experience! The food was amazing.</p>
+                    <p><strong>Mary:</strong> Great ambiance and delicious dishes. Will definitely return!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="package">
+            <img src="../../Downloads/rooftop.jpg" width="988" height="1211" alt="Rooftop Grill">
+            <div class="package-content">
+                <h2>The Rooftop Grill</h2>
+                <p>Grilled delights with a view.</p>
+                <p class="price">From $99/set</p>
+                <a href="rooftopGrill.html" class="button">Book Now</a>
+            </div>
+            <!-- Customer Reviews for The Rooftop Grill -->
+            <div class="review-section">
+                <h3>Customer Reviews:</h3>
+                <div class="reviews">
+                    <p><strong>David:</strong> The view was stunning! Perfect place for a date.</p>
+                    <p><strong>Sarah:</strong> Delicious food and excellent service. Highly recommend!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="package">
+            <img src="../../Downloads/italian.jpg" width="720" height="1080" alt="Italian">
+            <div class="package-content">
+                <h2>La Bella Cucina</h2>
+                <p>Authentic Italian elegance.</p>
+                <p class="price">From $159/set</p>
+                <a href="italian.html" class="button">Book Now</a>
+            </div>
+            <!-- Customer Reviews for La Bella Cucina -->
+            <div class="review-section">
+                <h3>Customer Reviews:</h3>
+                <div class="reviews">
+                    <p><strong>Alice:</strong> Best Italian food I've ever had! Absolutely delicious.</p>
+                    <p><strong>Mark:</strong> The pasta was heavenly. Worth every penny!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
